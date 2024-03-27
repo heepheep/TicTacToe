@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 900;
+    font-size: 36px;
+}
+.nameInput{
+    width: 255px;
+    height: 65px;
+    background: white;
+    border: 6px solid #601CA4;
+    box-shadow: inset 0px 0px 11px 12px rgba(0, 0, 0, 0.245),
+                0px 4px 4px black;
+    border-radius: 16px;
+    padding: 5px;
+    text-align: center;
+}
+.containers{
+    min-width: 300px;
+    margin-top: 50px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+.loadContainer{
+  margin-top: 50px;
+  align-self: center;
+  justify-self: center;
+}
+.loadText{
+  color: white;
+  font-size: 20px;
+}
+.load{
+  height: 120px;
+    animation: loading 0.7s linear infinite;
+}
+@keyframes loading {
+  0%{
+    transform: rotateZ(0deg);
+  }
+  100%{
+    transform: rotateZ(-360deg);
+  }
+}
+footer *{
+    color: #b8b63836;
+    text-align: center;
+    font-weight: 700;
+
+}
+.gameboard{
+    margin: 20px;
+    margin-bottom: 5px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+    gap: 13px;
+
+}
+.game-info{
+  text-align: center;
+  font-size: 25px;
+  margin-top: 25px;
+  color: #dedede;
+}
+
+.cell{
+    height: 70px;
+    width: 70px;
+    border-radius: 20px;
+    background: white;
+    border: 6px solid #601CA4;
+    box-shadow: inset 0px 0px 11px 12px rgba(0, 0, 0, 0.245),
+                0px 4px 8px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #D75B26;
+    font-size: 40px;
+}
+.symbol{
+    color: #D75B26;
+    font-size: 40px;
+}
+.myStyle1 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+.myStyle2 {
+  font-size: 14px;
+}
+.myStyle3 {
+  margin-top: 80px;
+  max-height: 230px;
+  max-width: 300px;
+}
+.myStyle4 {
+  margin-bottom: 70px;
+}
+.mainContainer{
+  display: grid;
+  grid-template-rows: 200px auto 150px;
+  justify-items: center;
+  align-items: center;
+  height: 100%;
+}
